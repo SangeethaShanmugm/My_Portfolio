@@ -88,7 +88,7 @@ section .title::after{
 }
 .navbar.sticky{
     padding: 15px 0;
-    background: lightblue;
+    background: light;
 }
 .navbar .max-width{
     display: flex;
@@ -114,22 +114,22 @@ section .title::after{
 }
 .navbar .menu li a{
     display: block;
-    color: white;
+    color: black;
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
     transition: color 0.3s ease;
 }
 .navbar .menu li a:hover{
-    color: lightblue;
+    color: black;
 }
 .navbar.sticky .menu li a:hover{
-    color: lightblue;
+    color: black;
 }
 
 /* menu btn styling */
 .menu-btn{
-    color: blue;
+    color: lightblue;
     font-size: 23px;
     cursor: pointer;
     display: none;
@@ -138,7 +138,7 @@ section .title::after{
     position: fixed;
     height: 45px;
     width: 42px;
-    background: whitesmoke;
+    background: black;
     right: 30px;
     bottom: 10px;
     text-align: center;
@@ -232,7 +232,7 @@ section .title::after{
     margin-bottom: 10px;
 }
 .about .about-content .right .text span{
-    color: light;
+    color: black;
 }
 .about .about-content .right p{
     text-align: justify;
@@ -492,9 +492,17 @@ section .title::after{
     display: flex;
     height: 65px;
     align-items: center;
+   
 }
 .contact .contact-content .row .info{
     margin-left: 30px;
+    margin-top: -55px;
+    
+}
+.contact .contact-content .row .info-right{
+    margin-left: 45px;
+    margin-top: -44px;
+   
 }
 .contact .contact-content .row i{
     font-size: 25px;
