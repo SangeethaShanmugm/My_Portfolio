@@ -73,7 +73,7 @@ section .title::after{
     font-size: 20px;
     color:black;
     padding: 0 5px;
-    background:lightblue;
+    background:white;
     transform: translateX(-50%);
 }
 
@@ -88,7 +88,7 @@ section .title::after{
 }
 .navbar.sticky{
     padding: 15px 0;
-    background: light;
+    background: lightblue;
 }
 .navbar .max-width{
     display: flex;
@@ -114,14 +114,14 @@ section .title::after{
 }
 .navbar .menu li a{
     display: block;
-    color: black;
+    color: lightblue;
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
     transition: color 0.3s ease;
 }
 .navbar .menu li a:hover{
-    color: black;
+    color: lightblue;
 }
 .navbar.sticky .menu li a:hover{
     color: black;
@@ -258,7 +258,7 @@ section .title::after{
     display: table;
     margin-left: auto;
     margin-right: auto;
-    color:grey;
+    color:black;
     
 }
 .letsThing{
@@ -282,12 +282,12 @@ section .title::after{
 }
 .achievements .title::after,
 .work .title::after{
-    background: whitesmoke;
+    background: white;
     content: "what I've done";
 }
 .achievements .achieve-content .card{
     width: calc(33% - 20px);
-    background: whitesmoke;
+    background: white;
     text-align: center;
     border-radius: 6px;
     padding: 20px 25px;
@@ -569,7 +569,7 @@ footer span a:hover{
         width: 100%;
         left: -100%;
         top: 0;
-        background: #111;
+        background: white;
         text-align: center;
         padding-top: 80px;
         transition: all 0.3s ease;
