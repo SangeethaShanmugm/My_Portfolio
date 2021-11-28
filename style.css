@@ -434,8 +434,9 @@ section .title::after{
     height: 40px !important;
     width: 40px !important;
     border: none !important;
-}
-
+    
+ }
+ 
 .work .carousel .card img{
     height: 150px;
     width: 150px;
