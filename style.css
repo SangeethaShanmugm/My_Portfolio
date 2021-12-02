@@ -88,7 +88,7 @@ section .title::after{
 }
 .navbar.sticky{
     padding: 15px 0;
-    background: lightblue;
+    background: black;
 }
 .navbar .max-width{
     display: flex;
@@ -96,17 +96,14 @@ section .title::after{
     justify-content: space-between;
 }
 .navbar .logo a{
-    color:lightblue;
+    color:yellow;
     font-size: 35px;
     font-weight: 600;
 }
 
-.navbar .logo a span{
-    color: lightblue;
-    transition: all 0.3s ease;
-}
+
 .navbar.sticky .logo a span{
-    color: lightblue;
+    color: yellow;
 }
 .navbar .menu li{
     list-style: none;
@@ -114,22 +111,22 @@ section .title::after{
 }
 .navbar .menu li a{
     display: block;
-    color: lightblue;
+    color: black;
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
     transition: color 0.3s ease;
 }
 .navbar .menu li a:hover{
-    color: lightblue;
+    color: yellow;
 }
 .navbar.sticky .menu li a:hover{
-    color: black;
+    color: yellow;
 }
 
 /* menu btn styling */
 .menu-btn{
-    color: lightblue;
+    color: black;
     font-size: 23px;
     cursor: pointer;
     display: none;
@@ -166,7 +163,7 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background: url("images/blue.jpg") no-repeat center;
+    background: url("images/portfolio.jpg") no-repeat center;
     height: 100vh;
     color: white;
     min-height: 500px;
@@ -195,8 +192,8 @@ section .title::after{
 }
 .home .home-content a{
     display: inline-block;
-    background: lightblue;
-    color: #fff;
+    background: white;
+    color: black;
     font-size: 25px;
     padding: 12px 36px;
     margin-top: 20px;
@@ -204,9 +201,10 @@ section .title::after{
     border-radius: 6px;
     border: 2px solid white;
     transition: all 0.3s ease;
+    text-decoration: none;
 }
 .home .home-content a:hover{
-    color: lightblue;
+    color: black;
     background: none;
 }
 
@@ -239,8 +237,8 @@ section .title::after{
 }
 .about .about-content .right a{
     display: inline-block;
-    background: lightblue;
-    color: #fff;
+    background: lightgrey;
+    color: black;
     font-size: 20px;
     font-weight: 500;
     padding: 10px 30px;
@@ -248,6 +246,7 @@ section .title::after{
     border-radius: 6px;
     border: 2px solid white;
     transition: all 0.3s ease;
+    text-decoration: none;
 }
 
 .likes{
@@ -267,8 +266,9 @@ section .title::after{
     color:black;
 }
 .about .about-content .right a:hover{
-    color: lightblue;
+    color: black;
     background: none;
+    border-color: black
 }
 
 /* achievements section styling */
@@ -295,7 +295,7 @@ section .title::after{
 }
 
 .achievements .achieve-content .card:hover{
-    background: lightblue;
+    background: lightgrey;
 }
 .achievements .achieve-content .card .box{
     transition: all 0.3s ease;
@@ -335,8 +335,8 @@ section .title::after{
 }
 .skills .skills-content .left a{
     display: inline-block;
-    background: lightblue;
-    color: #fff;
+    background:lightgrey;
+    color: black;
     font-size: 18px;
     font-weight: 500;
     padding: 8px 16px;
@@ -344,10 +344,12 @@ section .title::after{
     border-radius: 6px;
     border: 2px solid white;
     transition: all 0.3s ease;
+    text-decoration: none;
 }
 .skills .skills-content .left a:hover{
-    color: lightblue;
+    color: black;
     background: none;
+    border-color: black;
 }
 .skills .skills-content .right .bars{
     margin-bottom: 15px;
@@ -374,7 +376,7 @@ section .title::after{
     height: 100%;
     left: 0;
     top: 0;
-    background: lightblue;
+    background: black;
 }
 .otherSkills{
     font-size: large;
@@ -400,7 +402,14 @@ section .title::after{
 .work .title::after{
     content: "few of my works";
 }
-.work .carousel .card{
+.grid-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:20px;
+     justify-items: center;
+
+}
+.work .grid-container .card{
     height: 420px;
     background:whitesmoke;
     border-radius: 6px;
@@ -408,21 +417,23 @@ section .title::after{
     text-align: center;
     overflow: hidden;
     transition: all 0.3s ease;
+   
+    
 }
-.work .carousel .card:hover{
-    background: lightblue;
+.work .grid-container .card:hover{
+    background: lightgrey;
 }
-.work .carousel .card .box{
+.work .grid-container .card .box{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
 }
-.work .carousel .card:hover .box{
+.work .grid-container .card:hover .box{
     transform: scale(1.05);
 }
-.work .carousel .card .text{
+.work .grid-container .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
@@ -437,39 +448,20 @@ section .title::after{
     
  }
  
-.work .carousel .card img{
+.work .grid-container .card img{
+    position: relative;
     height: 150px;
     width: 150px;
     object-fit: cover;
     border-radius: 50%;
     border: 5px solid lightblue;
     transition: all 0.3s ease;
+    
 }
-.work .carousel .card:hover img{
+.work .grid-container .card:hover img{
     border-color: #fff;
 }
 
-.owl-dots{
-    text-align: center;
-    margin-top: 20px;
-}
-.owl-dot{
-    height: 13px;
-    width: 13px;
-    margin: 0 5px;
-    outline: none!important;
-    border-radius: 50%;
-    border: 2px solid lightblue!important;
-    transition: all 0.3s ease;
-}
-.owl-dot.active{
-    width: 35px;
-    border-radius: 14px;
-}
-.owl-dot.active,
-.owl-dot:hover{
-    background: lightblue!important;
-}
 
 /* contact section styling */
 .contact .title::after{
@@ -507,15 +499,22 @@ section .title::after{
 }
 .contact .contact-content .row i{
     font-size: 25px;
-    color: lightblue;
+    color: black;
 }
 .contact .contact-content .info .head{
     font-weight: 500;
     margin-top: 8px;
+    text-decoration: none;
+}
+.contact .contact-content .info-right a{
+    
+    text-decoration:none;
+    color:black;
 }
 .contact .contact-content .info .sub-title{
     color: #333;
 }
+
 .githubImg,.linkedInImg,.gmailImg{
     height: 40px;
     width: 40px;
@@ -523,13 +522,17 @@ section .title::after{
 
 /* footer section styling */
 footer{
-    background:lightblue;
+    background:black;
     padding: 15px 23px;
     color: #fff;
     text-align: center;
 }
+footer span {
+    color: white;
+    text-decoration: none;
+}
 footer span a{
-    color: black;
+    color: white;
     text-decoration: none;
 }
 footer span a:hover{
@@ -660,5 +663,10 @@ footer span a:hover{
         width: 35px;
         font-size: 23px;
         line-height: 38px;
+    }
+}
+@media (max-width: 500px){
+    .grid-container{
+        grid-template-columns: 1fr;
     }
 }
